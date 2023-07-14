@@ -1,0 +1,30 @@
+body {
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#container {
+    border: black 1px solid;
+    display: flex;
+    width: 50rem;
+    height: 20rem;
+}
+#secondaryContainer {
+    display: flex;
+    flex-direction: column;
+}
+.imgContainer {
+    width: 60rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/drawers.jpg);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
