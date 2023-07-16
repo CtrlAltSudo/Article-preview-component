@@ -10,21 +10,72 @@ main {
 #container {
     border: black 1px solid;
     display: flex;
-    width: 50rem;
-    height: 20rem;
+    width: 48rem;
+    height: 18.5rem;
+    border-radius: 1rem;
 }
 #secondaryContainer {
     display: flex;
     flex-direction: column;
-}
-.imgContainer {
-    width: 60rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(/images/drawers.jpg);
-}
-img {
-    max-width: 100%;
-    height: auto;
+    padding: 2rem;
 }
 
+.imgContainer img {
+    width: 19rem;
+    height: 18.5rem;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 1rem 0 0 1rem;
+}
+#profileContainer img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.profileInfoBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+.info p {
+    margin: 0;   
+}
+.info .infoPBottom {
+    margin-top: 5px;
+}
+.info {
+    align-self: end;
+}
+#shareElement {
+    margin-left: auto;
+    background-color: #ecf2f8;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-self: flex-end;
+}
+#shareElement img {
+    width: 20px;
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+
+}
+h1 {
+    font-size: 1.4rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+}
+p {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 0;
+}

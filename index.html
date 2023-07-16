@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Article preview component</title>
@@ -19,6 +21,7 @@
   <main>
 <div id="container">
   <div class="imgContainer">
+    <img src="/images/drawers.jpg" alt="" srcset="">
   </div>
    <div id="secondaryContainer"> 
     <h1>Shift the overall look and feel by adding these wonderful 
@@ -26,12 +29,19 @@
 <p> Ever been in a room and felt like something was missing? Perhaps 
   it felt slightly bare and uninviting. I’ve got some simple tips 
   to help you make any room feel complete.</p>
-  <span>  Michelle Appleton
-  28 Jun 2020</span>
-    Share
+  <div id="profileContainer">
+    <div class="profileInfoBlock">
+      <img src="/images/avatar-michelle.jpg" alt="avatar" srcset="">
+      <div class="info">     
+        <p class="infoPTop">Michelle Appleton</p>
+        <p class="infoPBottom">28 Jun 2020</p>
+      </div>
+      <div id="shareElement">
+        <img src="/images/icon-share.svg" alt="share icon" srcset="">
+      </div>
+    </div>
+</div>
  </div>
-
-
 </div>
 </main>
   
