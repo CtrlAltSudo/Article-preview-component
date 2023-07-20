@@ -1,15 +1,18 @@
-const shareButton = document.getElementById("shareElement");
-const shareContainer = document.getElementById("shareContainer");
+const shareButton = document.getElementsByClassName("shareBtn")[0];
+const shareContainer = document.getElementById("shareElement");
 
 
 shareButton.addEventListener("click", displayContainer);
-shareButton.addEventListener("mouseleave", removeContainer);
+
 
 function displayContainer(){
-    if (document.getElementById("shareContainer").style.display === "flex"){
-        document.getElementById("shareContainer").style.display = "none"
-    } else
-        document.getElementById("shareContainer").style.display = "flex";
-}
+    if (document.getElementById("shareElement").style.display === "none"){
+        document.getElementById("shareElement").style.display = "flex"
+        console.log("it works!")
+    }  else {
+        console.log("it doesn't work!")
+        document.getElementById("shareElement").style.display = "none"; 
+    }
 
+}
 
