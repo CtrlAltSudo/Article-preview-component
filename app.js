@@ -1,7 +1,6 @@
 const shareButton = document.getElementsByClassName("shareBtn")[0];
 const shareContainer = document.getElementById("shareElement");
 
-
 shareButton.addEventListener("click", displayContainer);
 
 
