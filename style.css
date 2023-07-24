@@ -21,6 +21,7 @@ main {
     padding: 2rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 0 0.5rem 0.5rem 0;
+
 }
 
 .imgContainer img {
@@ -101,7 +102,7 @@ h1 {
 #container .containerText{
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     margin: 0;
     color: #6d7f97;
@@ -109,7 +110,7 @@ h1 {
 #shareContainer {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.2rem;
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
     color: white;
     background-color: #48556a;
@@ -151,14 +152,14 @@ h1 {
 @media only screen and (max-width: 600px) {
     #container, main{
         flex-direction: column;
-        width: 95%;
+        width: 93%;
         height: auto;
         margin: 0 auto;
 
     }
     #secondaryContainer {
         border-radius: 0 0 0.5rem 0.5rem;
-        padding: 2rem 2.5rem 2.5rem 2rem;
+        padding: 0;
     }
     #secondaryContainer p {
         margin-top: 0.5rem;
@@ -171,11 +172,51 @@ h1 {
     .imgContainer img {
         border-radius: 0.5rem 0.5rem 0 0;
         object-fit: cover;
-        object-position: top;
+        object-position: center;
         width: 100%;
         height: 100%;
-    } 
-    .profileInfoBlock {
-        
     }
+
+    .profileInfoBlock {
+        padding: 0.3rem 2.3rem 0.3rem 2.3rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+        width: auto;
+    }
+    h1 {
+        margin-top: 2.2rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .containerText, h1 {
+        padding: 0 2.3rem 0 2.3rem;
+    }
+
+    #shareElement {
+        display: flex;
+        position: relative;
+        margin-right: 2rem;
+    }
+    #shareContainer {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #shareContainer p {
+        padding: 0;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    
+    .shareBtn {
+        margin-left: 0;
+        margin-right: 2.8em;
+        margin-top: 0.7rem;
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+    .shareBtn .btnImg{
+        width: 15px;
+        height: 15px;
+    }
+
   }
