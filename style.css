@@ -67,7 +67,6 @@ main {
 #shareElement {
     position: absolute;
     display: none;
-
 }
 .shareBtn .btnImg {
     width: 18px;
@@ -193,13 +192,14 @@ h1 {
 
     #shareElement {
         display: flex;
-        position: relative;
+        position: absolute;
         margin-right: 2rem;
     }
     #shareContainer {
-        position: relative;
+        position:absolute;
         top: 0;
         left: 0;
+        
     }
     #shareContainer p {
         padding: 0;
@@ -218,5 +218,6 @@ h1 {
         width: 15px;
         height: 15px;
     }
+
 
   }

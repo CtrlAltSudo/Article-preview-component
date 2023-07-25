@@ -1,9 +1,7 @@
-const shareButton = document.getElementsByClassName("shareBtn")[0];
+/* const shareButton = document.getElementsByClassName("shareBtn")[0];
+const profileInfoBlock = document.getElementsByClassName("profileInfoBlock")[0];
+
 const shareContainer = document.getElementById("shareElement");
-const profileBlock = document.getElementsByClassName("profileInfoBlock")[0];
-const profileBlockImg = document.getElementsByClassName("proImg")[0];
-const profileBlockInfo = document.getElementsByClassName("info")[0];
-const profileContainer = document.getElementById("profileContainer");
 const mainContainer = document.getElementById("container");
 
 shareButton.addEventListener("click", displayContainer);
@@ -14,11 +12,8 @@ function displayContainer() {
     const flexDirection = computedStyles.getPropertyValue("flex-direction");
     if (flexDirection === "column") {
       // Hide the shareContainer if mainContainer's flex-direction is "column"
-      profileBlockImg.style.display = "none";
-      profileBlockInfo.style.display = "none";
-      profileContainer.style.backgroundColor = "#48556a";
-      profileBlock.style.flexDirection = "row-reverse";
-
+      profileInfoBlock.style.display = "none"
+      shareContainer.style.display = "none"
       console.log("turn black pls")
     } else if (shareContainer.style.display === "none") {
       shareContainer.style.display = "flex";
@@ -28,4 +23,4 @@ function displayContainer() {
         shareContainer.style.display = "none";
       }
   }
-  
+   */
