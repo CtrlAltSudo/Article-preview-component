@@ -68,6 +68,7 @@ main {
     position: absolute;
     display: none;
 }
+
 .shareBtn .btnImg {
     width: 18px;
     height: 18px;
@@ -195,6 +196,7 @@ h1 {
         position: absolute;
         margin-right: 2rem;
     }
+
     #shareContainer {
         position:absolute;
         top: 0;
