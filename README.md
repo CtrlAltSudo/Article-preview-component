@@ -1,5 +1,5 @@
 <h1 align="center">Article Preview component</h1>
-<p align="center"> <a align="center" href="https://github.com/CtrlAltSudo/Article-preview-component">Live Demo</a><p>
+<p align="center"> <a align="center" href="https://ctrlaltsudo.github.io/Article-preview-component/">Live Demo</a><p>
 <p align="center"> <a align="center" href="https://www.frontendmentor.io/solutions/article-preview-component-OLaOjnScXX">Solution Page</a><p>
 <h2 align="center">Project Screenshot<h2>
 <p align="center">
