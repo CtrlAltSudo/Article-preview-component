@@ -18,7 +18,7 @@ main {
 #secondaryContainer {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 1rem 2rem 2.5rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 0 0.5rem 0.5rem 0;
 
@@ -33,11 +33,12 @@ main {
 }
 #profileContainer .proImg {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 41px;
+    height: 41px;
+    margin-top: 1.7rem;
 }
 #profileContainer {
-    margin-top: 1.2rem;
+
     position: relative;
 }
 .profileInfoBlock {
@@ -49,8 +50,7 @@ main {
 .info p {
     margin: 0;   
 }
-.profileInfoBlock .info .infoPBottom {
-    margin-top: 3px;
+.profileInfoBlock .info .infoPBottom  {
     font-size: 0.8rem;
     font-family: 'Bai Jamjuree', sans-serif;
     color: #9eafc2;
@@ -64,27 +64,33 @@ main {
 .info {
     align-self: end;
 }
-#shareElement {
-    position: absolute;
-    display: none;
-}
+
 
 .shareBtn .btnImg {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     margin-top: 5px;
-    padding: 0;    
+    padding: 0;
+    z-index: 10;    
 }
 
 .shareBtn {
+    margin-top: 1.8rem;
     border: none;
-    background-color: pink;
     border-radius: 50%;
     margin-left: auto;
     cursor: pointer;
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     padding: 0;
+    margin-right: 1.6rem;
+    z-index: 10;
+}
+button:hover {
+    background-color: #9eafc2;
+}
+button:hover .btnImg {
+    filter: brightness(0) invert(1);
     z-index: 10;
 }
 
@@ -103,13 +109,14 @@ h1 {
 #container .containerText{
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.5;
-    margin: 0;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
     color: #6d7f97;
 }
 #shareContainer {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 1.2rem;
     padding: 0.3rem 1.5rem 0.3rem 1.5rem;
@@ -118,8 +125,8 @@ h1 {
     position: absolute;
     width: 13rem;
     height: 2.9rem;
-    top: -5.5rem;
-    left: 15.5rem;
+    top: -3.5rem;
+    left: 14.5rem;
     border-radius: 0.5rem;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
@@ -153,19 +160,16 @@ h1 {
 @media only screen and (max-width: 600px) {
     #container, main{
         flex-direction: column;
-        width: 93%;
+        width: 95%;
         height: auto;
         margin: 0 auto;
-
     }
     #secondaryContainer {
         border-radius: 0 0 0.5rem 0.5rem;
         padding: 0;
+
     }
-    #secondaryContainer p {
-        margin-top: 0.5rem;
-        line-height: 1.5;
-    }
+
     .imgContainer {
         width: 100%;
         height: 13.5rem;
@@ -179,9 +183,14 @@ h1 {
     }
 
     .profileInfoBlock {
-        padding: 0.3rem 2.3rem 0.3rem 2.3rem;
         border-radius: 0 0 0.5rem 0.5rem;
         width: auto;
+        padding-bottom: 1.2rem;
+    }
+    #profileContainer {
+    }
+    #profileContainer .proImg {
+        margin-left: 2rem;
     }
     h1 {
         margin-top: 2.2rem;
@@ -192,21 +201,18 @@ h1 {
         padding: 0 2.3rem 0 2.3rem;
     }
 
-    #shareElement {
-        display: flex;
-        position: absolute;
-        margin-right: 2rem;
-    }
 
     #shareContainer {
         position: absolute;
-        width: 22.3rem;
-        height: 4rem;
-        left: -2.3rem;
-        right: 0;
-        top: 0;
+        width: 100%;
+        height: 5rem;
+        left: auto;
+        right: auto;
+        top: 0.5rem;
         margin: 0;
         border-radius: 0 0 0.5rem 0.5rem;
+        box-sizing: border-box;
+        padding-right: 7.5rem;
         
     }
     #shareContainer p {
